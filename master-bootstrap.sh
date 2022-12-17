@@ -25,3 +25,8 @@ echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.n
 apt-get update
 apt-get install -y temurin-11-jdk
 apt-get install -y git jenkins
+
+# Chrome
+sudo apt update && sudo apt -y upgrade
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt -y install ./google-chrome-stable_current_amd64.deb
